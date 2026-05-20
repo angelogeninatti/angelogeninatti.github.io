@@ -100,7 +100,7 @@
   },
   {
     "id": "orcid_162576409_point_of_interest_recommender",
-    "type": "conference",
+    "type": "workshop",
     "title": "Point-of-Interest Recommender Systems: Nudging towards Sustainable Tourism",
     "authors": "Noemi Mauro, Livio Scarpinati, Fabio Ferrero, Angelo Geninatti Cossatin, Claudio Mattutino",
     "venue": "Adjunct Proceedings of the 32nd ACM Conference on User Modeling, Adaptation and Personalization",
@@ -122,7 +122,7 @@
   },
   {
     "id": "orcid_162576408_promoting_green_fashion_consum",
-    "type": "conference",
+    "type": "workshop",
     "title": "Promoting Green Fashion Consumption in Recommender Systems",
     "authors": "Angelo Geninatti Cossatin",
     "venue": "Adjunct Proceedings of the 32nd ACM Conference on User Modeling, Adaptation and Personalization",
