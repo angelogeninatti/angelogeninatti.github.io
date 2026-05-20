@@ -135,8 +135,10 @@ function setupExpTabs() {
 
 /* ── Nav active state + URL hash on scroll ────────────────── */
 function setupNavHighlight() {
-  const navLinks = document.querySelectorAll(".nav-links a");
-  const linkedIds = Array.from(navLinks).map(a => a.getAttribute("href").slice(1));
+  const navLinks = document.querySelectorAll(".nav-links a, .nav-mobile-menu a");
+  const linkedIds = [...new Set(
+    Array.from(navLinks).map(a => a.getAttribute("href").slice(1))
+  )];
   const NAV_H = 64;
 
   function update() {
@@ -170,11 +172,41 @@ function observeFadeIns() {
   document.querySelectorAll(".fade-in:not(.visible)").forEach(el => obs.observe(el));
 }
 
+/* ── Mobile hamburger menu ────────────────────────────────── */
+function setupHamburger() {
+  const btn = document.getElementById("nav-hamburger");
+  const menu = document.getElementById("nav-mobile-menu");
+  if (!btn || !menu) return;
+
+  function close() {
+    btn.setAttribute("aria-expanded", "false");
+    menu.classList.remove("open");
+    menu.setAttribute("aria-hidden", "true");
+  }
+
+  btn.addEventListener("click", () => {
+    const open = btn.getAttribute("aria-expanded") === "true";
+    if (open) {
+      close();
+    } else {
+      btn.setAttribute("aria-expanded", "true");
+      menu.classList.add("open");
+      menu.setAttribute("aria-hidden", "false");
+    }
+  });
+
+  menu.querySelectorAll("a").forEach(a => a.addEventListener("click", close));
+  document.addEventListener("click", e => {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) close();
+  });
+}
+
 /* ── Boot ─────────────────────────────────────────────────── */
 document.addEventListener("DOMContentLoaded", () => {
   loadPublications();
   setupFilters();
   setupExpTabs();
   setupNavHighlight();
+  setupHamburger();
   observeFadeIns();
 });
