@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angelo Geninatti Cossatin - Researcher</title>
+  <meta name="description" content="Post-doctoral researcher at the University of Turin. Research in Recommender Systems, User Modeling, Sustainable AI, and Human-Computer Interaction." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav>
+  <span class="nav-name">Angelo Geninatti Cossatin</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#experience">Experience</a></li>
+  </ul>
+</nav>
+
+<!-- ── Hero ───────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <!-- Replace photo.jpg with your actual photo, or remove this block to use the placeholder -->
+      <div id="hero-avatar-wrapper">
+        <div class="hero-avatar-placeholder" id="avatar-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <img class="hero-avatar" id="hero-photo" src="photo.jpg" alt="Angelo Geninatti Cossatin"
+             style="display:none"
+             onload="this.style.display='block'; document.getElementById('avatar-placeholder').style.display='none';"
+             onerror="this.style.display='none';" />
+      </div>
+
+      <div class="hero-text">
+        <h1>Angelo Geninatti Cossatin</h1>
+        <p class="hero-role">Post-doctoral Researcher · University of Turin, Department of Computer Science</p>
+        <div class="hero-links">
+          <a class="hero-link" href="https://www.linkedin.com/in/angelo-geninatti-cossatin-611128240/" target="_blank" rel="noopener">
+            <!-- LinkedIn icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a class="hero-link" href="https://scholar.google.com/citations?user=NgVUC0wAAAAJ&hl=en" target="_blank" rel="noopener">
+            <!-- Scholar icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 3L1 9l4 2.18V17c0 .55.22 1.05.59 1.41L12 22l6.41-3.59c.37-.36.59-.86.59-1.41v-5.82L23 9 12 3zm6 13.32l-6 3.36-6-3.36V12.27l6 3.36 6-3.36v4.05zM12 13.45L3.5 9 12 4.55 20.5 9 12 13.45z"/>
+            </svg>
+            Google Scholar
+          </a>
+          <a class="hero-link" href="https://orcid.org/0009-0007-5378-7061" target="_blank" rel="noopener">
+            <!-- ORCID icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.941-1.6 3.941-3.722 0-2.122-1.581-3.722-3.941-3.722h-2.297z"/>
+            </svg>
+            ORCID
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── About ───────────────────────────────────────────────── -->
+<section id="about">
+  <div class="container fade-in">
+    <h2 class="section-title">Research Interests</h2>
+
+    <div class="interests-grid">
+      <span class="interest-tag">Recommender Systems</span>
+      <span class="interest-tag">User Modeling</span>
+      <span class="interest-tag">Personalization</span>
+      <span class="interest-tag">Human-Computer Interaction</span>
+      <span class="interest-tag">Sustainable Artificial Intelligence</span>
+      <span class="interest-tag">Machine Learning</span>
+      <span class="interest-tag">Large Language Models</span>
+      <span class="interest-tag">Information Retrieval</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── Publications ────────────────────────────────────────── -->
+<section id="publications">
+  <div class="container fade-in">
+    <h2 class="section-title">Publications</h2>
+
+    <div class="pub-filters">
+      <button class="pub-filter active" data-filter="all">All</button>
+      <button class="pub-filter" data-filter="journal">Journals</button>
+      <button class="pub-filter" data-filter="conference">Conferences</button>
+      <button class="pub-filter" data-filter="workshop">Workshops</button>
+    </div>
+
+    <div id="publications-list">
+      <p style="color:var(--muted);font-size:.9rem;">Loading publications…</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Experience ──────────────────────────────────────────── -->
+<section id="experience">
+  <div class="container fade-in">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="exp-tabs">
+      <button class="exp-tab active" data-tab="tab-research">Research</button>
+      <button class="exp-tab" data-tab="tab-teaching">Teaching</button>
+      <button class="exp-tab" data-tab="tab-service">Service & Awards</button>
+    </div>
+
+    <!-- ── Research tab ─────────────────────────────────── -->
+    <div class="exp-panel active" id="tab-research">
+
+      <div class="exp-subheading">Positions</div>
+      <div class="timeline">
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">Mar–Jun 2025</div>
+          <div class="tl-content">
+            <div class="tl-title">Visiting Researcher</div>
+            <div class="tl-org">University of Copenhagen - Copenhagen, Denmark</div>
+            <div class="tl-desc">
+              Research visit hosted by Prof. Maria Maistro. Focus on fairness evaluation in recommender systems.
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">Nov 2024–Jun 2025</div>
+          <div class="tl-content">
+            <div class="tl-title">Project Manager &amp; Software Engineer</div>
+            <div class="tl-org">SmartScholars - University of Turin</div>
+            <div class="tl-desc">
+              Led the development of a virtual-reality application for peer tutoring and conducted exploratory
+              user studies on its effectiveness.
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">Nov 2022–March 2026</div>
+          <div class="tl-content">
+            <div class="tl-title">PhD Researcher in Computer Science</div>
+            <div class="tl-org">University of Turin, Department of Computer Science</div>
+            <div class="tl-desc">
+              Thesis: <em>Intelligent Systems for Good</em>.<br/>
+              Supervisors: Liliana Ardissono, Noemi Mauro.<br>
+              Graduated with Honors.
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">Jul 2021–Oct 2022</div>
+          <div class="tl-content">
+            <div class="tl-title">Research Fellow</div>
+            <div class="tl-org">University of Turin, Department of Computer Science</div>
+            <div class="tl-desc">
+              Development of a web application presenting multi-disciplinary thematic trails connected
+              to culturally significant places. Use of ontologies and NLP for extraction, understanding, and semantic access to textual data.
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+
+      <div class="exp-subheading">Research Projects</div>
+      <div class="timeline">
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2024–present</div>
+          <div class="tl-content">
+            <div class="tl-title">SmartScholars</div>
+            <div class="tl-org">University of Turin</div>
+            <div class="tl-desc">
+              VR-based peer-tutoring research project. Role: software development and research.
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2023–present</div>
+          <div class="tl-content">
+            <div class="tl-title">SPACES</div>
+            <div class="tl-org">University of Turin - funded by Fondazione CRT</div>
+            <div class="tl-desc">
+              Adaptive support for participation in groups and activities for adults with high-functioning
+              autism spectrum disorder. Role: development of group-formation and matching algorithms.
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2021–present</div>
+          <div class="tl-content">
+            <div class="tl-title">Triangolazioni</div>
+            <div class="tl-org">University of Turin - Public Engagement funds</div>
+            <div class="tl-desc">
+              Web application visualising semantic interconnections between points of interest for
+              cultural heritage exploration. Role: UI development and recommendation algorithms.
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+
+    </div><!-- /tab-research -->
+
+    <!-- ── Teaching tab ──────────────────────────────────── -->
+    <div class="exp-panel" id="tab-teaching">
+
+      <div class="exp-subheading">Courses</div>
+      <div class="timeline">
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2026</div>
+          <div class="tl-content">
+            <div class="tl-title">Lecturer - Machine Learning</div>
+            <div class="tl-org">University of Turin, SUISS</div>
+            <div class="tl-desc">Undergraduate-level course on machine learning.</div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2023–2025</div>
+          <div class="tl-content">
+            <div class="tl-title">Lecturer - "Recommender Systems and Personalized User Experience"</div>
+            <div class="tl-org">PhD Programme in Computer Science, University of Turin</div>
+            <div class="tl-desc">
+              Annual 2-hour lecture on <em>Neural Networks in Recommender Systems</em>.
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2023–2024</div>
+          <div class="tl-content">
+            <div class="tl-title">Guest Lecture - Databases (PostgreSQL)</div>
+            <div class="tl-org">University of Turin, Department of Computer Science</div>
+            <div class="tl-desc">Hands-on 2-hour lecture on PostgreSQL usage.</div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2023–2026</div>
+          <div class="tl-content">
+            <div class="tl-title">High School Orientation Activity</div>
+            <div class="tl-org">University of Turin, Department of Computer Science</div>
+            <div class="tl-desc">
+              Annual 2-hour workshop: <em>Building a Recommender System with Python</em>.
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2019–2025</div>
+          <div class="tl-content">
+            <div class="tl-title">Subject Matter Expert - Programming III</div>
+            <div class="tl-org">University of Turin, Department of Computer Science</div>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+
+      <div class="exp-subheading">Student Support</div>
+      <div class="timeline">
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2025–present</div>
+          <div class="tl-content">
+            <div class="tl-title">Student Collaborator - Fundamentals of Computer Science (Art. 76)</div>
+            <div class="tl-org">University of Turin, Department of Computer Science</div>
+            <div class="tl-desc">Exam assistance.</div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2023–present</div>
+          <div class="tl-content">
+            <div class="tl-title">Student Collaborator - Programming III &amp; Databases (Art. 76)</div>
+            <div class="tl-org">University of Turin, Department of Computer Science</div>
+            <div class="tl-desc">Exam assistance and student support.</div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2019–2020</div>
+          <div class="tl-content">
+            <div class="tl-title">Tutoring for Students with Disabilities or Learning Disorders</div>
+            <div class="tl-org">University of Turin, Department of Computer Science</div>
+            <div class="tl-desc">
+              Note-taking and study support for Algorithms &amp; Data Structures, Formal Languages, and HCI courses.
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+
+      <div class="exp-subheading">Thesis Co-supervision (Bachelor's, L31 - UniTo)</div>
+      <div class="timeline">
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2025</div>
+          <div class="tl-content">
+            <div class="tl-title">Co-supervisor - 7 Bachelor's Theses</div>
+            <div class="tl-org">University of Turin, Department of Computer Science</div>
+            <div class="tl-desc">
+              Topics included: VR peer-tutoring, MLP-based matchmaking algorithms for peer-to-peer
+              tutoring, activity recommendation with clustering and neural methods, and
+              Points-of-Interest recommendation web applications.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div><!-- /tab-teaching -->
+
+    <!-- ── Service & Awards tab ───────────────────────────── -->
+    <div class="exp-panel" id="tab-service">
+
+      <div class="exp-subheading">Conference Organisation</div>
+      <div class="timeline">
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2027</div>
+          <div class="tl-content">
+            <div class="tl-title">Accessibility &amp; Inclusion Chair</div>
+            <div class="tl-org">IUI 2027 - ACM Intelligent User Interfaces</div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2026</div>
+          <div class="tl-content">
+            <div class="tl-title">Workshop Co-organiser</div>
+            <div class="tl-org">UMAP4Good @ UMAP 2026 · RecSoGood @ RecSys 2026</div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2025</div>
+          <div class="tl-content">
+            <div class="tl-title">Proceedings Chair</div>
+            <div class="tl-org">IIR 2025 - 16th Italian Information Retrieval Workshop</div>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2025</div>
+          <div class="tl-content">
+            <div class="tl-title">Session Chair &amp; Workshop Co-organiser</div>
+            <div class="tl-org">IR4U2 2025 - Workshop on IR for Understudied Users @ SIGIR 2025</div>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+
+      <div class="exp-subheading">Student Volunteering</div>
+      <div class="timeline">
+
+        <div class="tl-item fade-in">
+          <div class="tl-date">2023–2025</div>
+          <div class="tl-content">
+            <div class="tl-title">Student Volunteer</div>
+            <div class="tl-org">ACM RecSys 2025 · ACM UMAP 2024 · ACM UMAP 2023</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="exp-subheading">Awards &amp; Grants</div>
+      <ul class="awards-list">
+
+        <li class="award-item fade-in">
+          <div class="award-dot"></div>
+          <div>
+            <div class="award-text">
+              <strong>"Pietro Torasso" Prize</strong> for the Best Master's Thesis in Artificial Intelligence -
+              <em>Ethics and Environmental Sustainability in Recommender Systems</em>.
+            </div>
+            <div class="award-year">2022 · University of Turin</div>
+          </div>
+        </li>
+
+        <li class="award-item fade-in">
+          <div class="award-dot"></div>
+          <div>
+            <div class="award-text">
+              <strong>3 Travel Grants</strong> awarded by competitive scientific committee selection:
+              ACM RecSys 2025, ACM UMAP 2024, ACM UMAP 2023.
+            </div>
+            <div class="award-year">2023–2025</div>
+          </div>
+        </li>
+
+        <li class="award-item fade-in">
+          <div class="award-dot"></div>
+          <div>
+            <div class="award-text">
+              <strong>Google Cloud Research Grant</strong> for academic computing resources.
+            </div>
+            <div class="award-year">2024–2025 · 2025–2026</div>
+          </div>
+        </li>
+
+      </ul>
+
+    </div><!-- /tab-service -->
+
+  </div><!-- /container -->
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────────── -->
+<footer>
+  <div class="container footer-inner">
+    <p>
+      Angelo Geninatti Cossatin &nbsp;·&nbsp; University of Turin, Department of Computer Science
+      &nbsp;·&nbsp;
+      <a href="https://orcid.org/0009-0007-5378-7061" target="_blank" rel="noopener">ORCID</a>
+      &nbsp;·&nbsp;
+      <a href="https://scholar.google.com/citations?user=NgVUC0wAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

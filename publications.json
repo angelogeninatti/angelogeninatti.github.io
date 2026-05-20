@@ -1,0 +1,200 @@
+[
+  {
+    "id": "orcid_201210430_a_holistic_view_of_sustainabil",
+    "type": "workshop",
+    "title": "A Holistic View of Sustainability in Multimodal Recommender Systems",
+    "authors": "Angelo Geninatti Cossatin, Liliana Ardissono, Noemi Mauro",
+    "venue": "Second International Workshop on Recommender Systems for Sustainability and Social Good (RecSoGood 2025), in conjunction with RecSys 2025",
+    "year": 2026,
+    "doi": "10.1007/978-3-032-13342-7_1",
+    "pdf": null,
+    "note": ""
+  },
+  {
+    "id": "orcid_201194319_balancing_sensory_needs__inter",
+    "type": "workshop",
+    "title": "Balancing Sensory Needs, Interests and Personality: An Integrated Approach to Event Recommendations for Adults with Autism Spectrum Disorder",
+    "authors": "Angelo Geninatti Cossatin, Liliana Ardissono, Federica Cena, Claudio Mattutino, Noemi Mauro",
+    "venue": "Proceedings of the Advances in Bias, Fairness, and Understudied Users in Information Retrieval Workshops (IR4U2 2025, BIAS 2025)",
+    "year": 2026,
+    "doi": "10.1007/978-3-032-12717-4_4",
+    "pdf": null,
+    "note": ""
+  },
+  {
+    "id": "orcid_208341660_from_scenes_to_places__enhanci",
+    "type": "journal",
+    "title": "From Scenes to Places: Enhancing Film Exploration through the RevIS Ontology-based consultation App",
+    "authors": "Silvio Alovisio, Liliana Ardissono, Angelo Geninatti Cossatin, Vincenzo Lombardo, Diego Magro, Noemi Mauro, Andrea Nasi, Livio Scarpinati",
+    "venue": "Journal on Computing and Cultural Heritage",
+    "year": 2026,
+    "doi": "10.1145/3801551",
+    "pdf": null,
+    "note": ""
+  },
+  {
+    "id": "orcid_214091820_now_that_your_system_has_been",
+    "type": "journal",
+    "title": "Now that your System has been Reproduced, What does this Mean for the Users?",
+    "authors": "Angelo Geninatti Cossatin, Timo Breuer, Noemi Mauro, Maria Maistro",
+    "venue": "ACM Transactions on Information Systems",
+    "year": 2026,
+    "doi": "10.1145/3814609",
+    "pdf": null,
+    "note": ""
+  },
+  {
+    "id": "orcid_187376260_shrinking_for_success__multimo",
+    "type": "journal",
+    "title": "Shrinking for success: Multimodal dimensionality reduction for sustainable recommender systems",
+    "authors": "Angelo Geninatti Cossatin, Noemi Mauro",
+    "venue": "Expert Systems with Applications",
+    "year": 2026,
+    "doi": "10.1016/j.eswa.2025.128929",
+    "pdf": "https://iris.unito.it/retrieve/e9c39e1a-7df2-4bc2-aac4-e27905605436/LAM-EditorialVersion.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_205419036_the_autonomy_equation__how_age",
+    "type": "journal",
+    "title": "The autonomy equation: How agentic AI reshapes trust and workload in routine productivity applications",
+    "authors": "Angelo Geninatti Cossatin, Fabio Ferrero, Liliana Ardissono, Noemi Mauro",
+    "venue": "Information Processing & Management",
+    "year": 2026,
+    "doi": "10.1016/j.ipm.2026.104681",
+    "pdf": "https://iris.unito.it/retrieve/d6ffb75d-0836-4596-83f8-2c49fce82641/1-s2.0-S0957417425025461-main.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_187846914_2nd_workshop_on_information_re",
+    "type": "conference",
+    "title": "2nd Workshop on Information Retrieval for Understudied Users (IR4U2) - Bridging User-centered AI with IR: Making Information Retrieval Accessible for All",
+    "authors": "Noemi Mauro, Angelo Geninatti Cossatin, Maria Soledad Pera, Federica Cena, Monica Landoni, Theo Huibers, Emiliana Murgia",
+    "venue": "Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "year": 2025,
+    "doi": "10.1145/3726302.3730356",
+    "pdf": "https://iris.unito.it/retrieve/0f5e03e9-be4a-4d2f-978d-41d58988b1c7/3726302.3730356.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_197146635_lean_and_green__computational",
+    "type": "workshop",
+    "title": "Lean and Green: Computational Efficiency and Nudging for Sustainable Fashion Recommendation",
+    "authors": "A.G. Cossatin",
+    "venue": "Ceur Workshop Proceedings",
+    "year": 2025,
+    "doi": null,
+    "pdf": "https://ceur-ws.org/Vol-4026/paper2.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_187221525_tell_me_more__integrating_llms",
+    "type": "journal",
+    "title": "Tell me more: integrating LLMs in a cultural heritage website for advanced information exploration support",
+    "authors": "Angelo Geninatti Cossatin, Noemi Mauro, Fabio Ferrero, Liliana Ardissono",
+    "venue": "Information Technology & Tourism",
+    "year": 2025,
+    "doi": "10.1007/S40558-025-00312-8",
+    "pdf": "https://iris.unito.it/retrieve/87bdab6c-1e80-4330-9257-8c3ad54bc3ce/ITT-2025-editorialVersion.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_162576409_point_of_interest_recommender",
+    "type": "conference",
+    "title": "Point-of-Interest Recommender Systems: Nudging towards Sustainable Tourism",
+    "authors": "Noemi Mauro, Livio Scarpinati, Fabio Ferrero, Angelo Geninatti Cossatin, Claudio Mattutino",
+    "venue": "Adjunct Proceedings of the 32nd ACM Conference on User Modeling, Adaptation and Personalization",
+    "year": 2024,
+    "doi": "10.1145/3631700.3664904",
+    "pdf": "https://iris.unito.it/retrieve/846b0257-6a59-441c-9b98-9d1a88c83363/PATCH_2024___sustainable_tourism.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_162534448_promoting_green_fashion_consum",
+    "type": "journal",
+    "title": "Promoting Green Fashion Consumption Through Digital Nudges in Recommender Systems",
+    "authors": "Angelo Geninatti Cossatin, Noemi Mauro, Liliana Ardissono",
+    "venue": "IEEE Access",
+    "year": 2024,
+    "doi": "10.1109/ACCESS.2024.3349710",
+    "pdf": "https://iris.unito.it/retrieve/5f4743cb-5d4f-4d6a-8a79-abf4e87694d2/Article.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_162576408_promoting_green_fashion_consum",
+    "type": "conference",
+    "title": "Promoting Green Fashion Consumption in Recommender Systems",
+    "authors": "Angelo Geninatti Cossatin",
+    "venue": "Adjunct Proceedings of the 32nd ACM Conference on User Modeling, Adaptation and Personalization",
+    "year": 2024,
+    "doi": "10.1145/3631700.3664922",
+    "pdf": null,
+    "note": ""
+  },
+  {
+    "id": "orcid_162534602_demo__the_triangolazioni_mobil",
+    "type": "conference",
+    "title": "Demo: the Triangolazioni Mobile Guide for Exploring the Interconnections between Science, Art and Territory",
+    "authors": "L. Ardissono, F. Bona, C. Concilio, E. Cravero, S. Ferraris, F. Ferrero, A. Geninatti Cossatin, M. Giardino, G. Magnano, C. Mattutino, N. Mauro",
+    "venue": "CHItaly: Proceedings of the Biannual Conference of the Italian SIGCHI Chapter",
+    "year": 2023,
+    "doi": "10.1145/3605390.3610808",
+    "pdf": "https://iris.unito.it/retrieve/234bab47-95c2-4d97-95c7-31faec0557a8/AuthorCopy.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_162534447_enriching_recommender_systems",
+    "type": "conference",
+    "title": "Enriching Recommender Systems Results with Data about Sustainability and Ethical Standards of Brands",
+    "authors": "Angelo Geninatti Cossatin, Noemi Mauro, Liliana Ardissono",
+    "venue": "Ieee International Conference on Web Intelligence and Intelligent Agent Technology, Wi-iat",
+    "year": 2023,
+    "doi": "10.1109/WI-IAT59888.2023.00037",
+    "pdf": "https://iris.unito.it/retrieve/c8cbb9dc-d7c3-41d1-b604-72a231c71567/WI_2023___Sustainability.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_162534445_synchronized_multi_list_user_i",
+    "type": "workshop",
+    "title": "Synchronized Multi-list User Interfaces for Fashion Catalogs",
+    "authors": "Angelo Geninatti Cossatin, Noemi Mauro, Gianmarco Izzi, Liliana Ardissono",
+    "venue": "Adjunct Proceedings of the Acm Conference on User Modeling, Adaptation and Personalization, Umap",
+    "year": 2023,
+    "doi": "10.1145/3563359.3597382",
+    "pdf": "https://iris.unito.it/retrieve/21d00d8d-8222-4c5a-baec-261f52242e98/EXUM_2023%20%281%29.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_138938971_a_mobile_guide_to_explore_inte",
+    "type": "workshop",
+    "title": "A Mobile Guide to Explore Interconnections between Science, Art and Territory",
+    "authors": "Noemi Mauro, Angelo Geninatti Cossatin, Ester Cravero, Liliana Ardissono, Guido Magnano, Marco Giardino, Claudio Mattutino",
+    "venue": "Adjunct Proceedings of the 30th ACM Conference on User Modeling, Adaptation and Personalization",
+    "year": 2022,
+    "doi": "10.1145/3511047.3537649",
+    "pdf": "https://iris.unito.it/retrieve/26bba0de-f709-4ca7-aac4-1cdbbb58e915/PATCH_2022___Triangolazioni.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_138939021_exploring_semantically_interla",
+    "type": "conference",
+    "title": "Exploring Semantically Interlaced Cultural Heritage Narratives",
+    "authors": "Noemi Mauro, Angelo Geninatti Cossatin, Ester Cravero, Liliana Ardissono, Guido Magnano, Marco Giardino",
+    "venue": "Proceedings of the 33rd ACM Conference on Hypertext and Social Media",
+    "year": 2022,
+    "doi": "10.1145/3511095.3536366",
+    "pdf": "https://iris.unito.it/retrieve/96070aa7-aad8-4f5f-8ce1-5f5d8a364901/HT_2022___Triangolazioni.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_138938908_beyond_traditional_cultural_he",
+    "type": "workshop",
+    "title": "Beyond Traditional Cultural Heritage Recommender Systems: Suggesting Airbnb Experiences to Users",
+    "authors": "Noemi Mauro, Liliana Ardissono, Giovanna Petrone, Angelo Geninatti Cossatin, Claudio Mattutino",
+    "venue": "Adjunct Proceedings of the 29th ACM Conference on User Modeling, Adaptation and Personalization",
+    "year": 2021,
+    "doi": "10.1145/3450614.3463385",
+    "pdf": "https://iris.unito.it/retrieve/e27ce431-c3dd-2581-e053-d805fe0acbaa/PATCH_2021.pdf",
+    "note": ""
+  }
+]
