@@ -75,8 +75,8 @@ nav {
 
 .nav-links a {
   display: inline-block;
-  padding: .3rem .85rem;
-  font-size: .83rem;
+  padding: .3rem .6rem;
+  font-size: .8rem;
   font-weight: 600;
   color: var(--muted);
   border-radius: 99px;
@@ -398,29 +398,11 @@ section + section { border-top: 1px solid var(--border); }
 .pub-note { font-size: .76rem; color: var(--muted); font-style: italic; margin-top: .3rem; }
 
 /* ── Experience ───────────────────────────────────────────── */
-.exp-tabs { display: flex; gap: .4rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
-
-.exp-tab {
-  padding: .42rem 1.1rem;
-  border-radius: 99px;
-  font-size: .83rem;
-  font-weight: 700;
-  letter-spacing: .01em;
-  cursor: pointer;
-  border: 1.5px solid var(--border);
-  color: var(--muted);
-  background: var(--card);
-  transition: all .15s;
+.exp-section {
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
 }
-.exp-tab:hover,
-.exp-tab.active {
-  border-color: var(--accent);
-  color: var(--accent);
-  background: var(--accent-light);
-}
-
-.exp-panel { display: none; }
-.exp-panel.active { display: block; }
+.exp-section:first-child { border-top: none; padding-top: 0; }
 
 /* Timeline */
 .timeline { display: flex; flex-direction: column; }
@@ -478,6 +460,16 @@ section + section { border-top: 1px solid var(--border); }
   border-bottom: 2px solid var(--accent-light);
 }
 .exp-subheading:first-child { margin-top: 0; }
+
+.exp-sub-subheading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 1.75rem 0 1rem;
+}
 
 /* Awards */
 .awards-list { list-style: none; display: flex; flex-direction: column; gap: .6rem; }

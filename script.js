@@ -81,6 +81,8 @@ function pubCard(pub) {
     </div>`;
 }
 
+const TYPE_ORDER = { journal: 0, conference: 1, workshop: 2, thesis: 3 };
+
 function renderPublications(pubs) {
   const container = document.getElementById("publications-list");
 
@@ -90,6 +92,13 @@ function renderPublications(pubs) {
   for (const p of filtered) {
     (byYear[p.year] ??= []).push(p);
   }
+
+  if (activeFilter === "all") {
+    for (const year of Object.keys(byYear)) {
+      byYear[year].sort((a, b) => (TYPE_ORDER[a.type] ?? 99) - (TYPE_ORDER[b.type] ?? 99));
+    }
+  }
+
   const years = Object.keys(byYear).sort((a, b) => b - a);
 
   if (years.length === 0) {
@@ -117,21 +126,6 @@ function setupFilters() {
   });
 }
 
-/* ── Experience tabs ──────────────────────────────────────── */
-function setupExpTabs() {
-  document.querySelectorAll(".exp-tab").forEach(tab => {
-    tab.addEventListener("click", () => {
-      document.querySelectorAll(".exp-tab").forEach(t => t.classList.remove("active"));
-      document.querySelectorAll(".exp-panel").forEach(p => p.classList.remove("active"));
-      tab.classList.add("active");
-      const target = document.getElementById(tab.dataset.tab);
-      if (target) {
-        target.classList.add("active");
-        observeFadeIns();
-      }
-    });
-  });
-}
 
 /* ── Nav active state + URL hash on scroll ────────────────── */
 function setupNavHighlight() {
@@ -205,7 +199,6 @@ function setupHamburger() {
 document.addEventListener("DOMContentLoaded", () => {
   loadPublications();
   setupFilters();
-  setupExpTabs();
   setupNavHighlight();
   setupHamburger();
   observeFadeIns();
