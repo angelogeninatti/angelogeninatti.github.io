@@ -1,5 +1,16 @@
 [
   {
+    "id": "orcid_216405373_a_context_aware_cultural_herit",
+    "type": "conference",
+    "title": "A Context-Aware Cultural Heritage Guide Powered by LLMs",
+    "authors": "Liliana Ardissono, Fabio Ferrero, Angelo Geninatti Cossatin, Claudio Mattutino, Noemi Mauro",
+    "venue": "UMAP '26: Proceedings of the 34th ACM Conference on User Modeling, Adaptation and Personalization",
+    "year": 2026,
+    "doi": "10.1145/3774935.3812714",
+    "pdf": null,
+    "note": ""
+  },
+  {
     "id": "orcid_201210430_a_holistic_view_of_sustainabil",
     "type": "workshop",
     "title": "A Holistic View of Sustainability in Multimodal Recommender Systems",
@@ -22,6 +33,50 @@
     "note": ""
   },
   {
+    "id": "orcid_216627773_beyond_navigation__enabling_in",
+    "type": "workshop",
+    "title": "Beyond Navigation: Enabling Inclusive Urban Exploration",
+    "authors": "Liliana Ardissono, Angelo Geninatti Cossatin, Noemi Mauro, Lien Michiels, Sole Pera",
+    "venue": "Joint Proceedings of the ACM UMAP 2026 Workshops",
+    "year": 2026,
+    "doi": null,
+    "pdf": "https://ceur-ws.org/Vol-4206/SOCIALIZE-04.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_216627770_enhancing_access_to_movie_cult",
+    "type": "workshop",
+    "title": "Enhancing Access to Movie Cultural Heritage through Narrative-Enriched Item Representations",
+    "authors": "Fabio Ferrero, Angelo Geninatti Cossatin, Liliana Ardissono, Noemi Mauro, Lien Michiels, Sole Pera",
+    "venue": "Joint Proceedings of the ACM UMAP 2026 Workshops",
+    "year": 2026,
+    "doi": null,
+    "pdf": "https://ceur-ws.org/Vol-4206/PATCH-06.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_216405375_evaluating_the_role_of_context",
+    "type": "conference",
+    "title": "Evaluating the Role of Context Representations in the Behavioral Fidelity of LLM-based Personas for Food Preferences",
+    "authors": "Eleonora Balloccu, Ludovico Boratto, Angelo Geninatti Cossatin, Mirko Marras, Noemi Mauro, Giacomo Medda",
+    "venue": "UMAP '26: Proceedings of the 34th ACM Conference on User Modeling, Adaptation and Personalization",
+    "year": 2026,
+    "doi": "10.1145/3774935.3806159",
+    "pdf": null,
+    "note": ""
+  },
+  {
+    "id": "orcid_216405372_first_international_workshop_o",
+    "type": "workshop",
+    "title": "First International Workshop on User Modeling, Personalization, and Adaptive Systems for Sustainability and Social Good (UMAP4Good 2026)",
+    "authors": "Allegra De Filippo, Angelo Geninatti Cossatin, Elisabeth Lex, Noemi Mauro, Giacomo Medda, Giuseppe Spillo",
+    "venue": "",
+    "year": 2026,
+    "doi": "10.1145/3774935.3802525",
+    "pdf": null,
+    "note": ""
+  },
+  {
     "id": "orcid_208341660_from_scenes_to_places__enhanci",
     "type": "journal",
     "title": "From Scenes to Places: Enhancing Film Exploration through the RevIS Ontology-based consultation App",
@@ -33,6 +88,28 @@
     "note": ""
   },
   {
+    "id": "orcid_216627772_generative_ai_as_an_adaptive_n",
+    "type": "workshop",
+    "title": "Generative AI as an Adaptive Narrative Layer for Cultural Heritage: Towards Responsible Personalized Storytelling",
+    "authors": "Liliana Ardissono, Angelo Geninatti Cossatin, Noemi Mauro, Claudia Picardi, Lien Michiels, Sole Pera",
+    "venue": "Joint Proceedings of the ACM UMAP 2026 Workshops",
+    "year": 2026,
+    "doi": null,
+    "pdf": "https://ceur-ws.org/Vol-4206/PATCH-02.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_216405374_investigating_the_gap_between",
+    "type": "conference",
+    "title": "Investigating the Gap Between Offline Metrics and Perceived Fairness",
+    "authors": "Angelo Geninatti Cossatin, Maria Maistro, Noemi Mauro",
+    "venue": "UMAP '26: Proceedings of the 34th ACM Conference on User Modeling, Adaptation and Personalization",
+    "year": 2026,
+    "doi": "10.1145/3774935.3806150",
+    "pdf": null,
+    "note": ""
+  },
+  {
     "id": "orcid_214091820_now_that_your_system_has_been",
     "type": "journal",
     "title": "Now that your System has been Reproduced, What does this Mean for the Users?",
@@ -40,6 +117,17 @@
     "venue": "ACM Transactions on Information Systems",
     "year": 2026,
     "doi": "10.1145/3814609",
+    "pdf": null,
+    "note": ""
+  },
+  {
+    "id": "orcid_216589965_preface",
+    "type": "workshop",
+    "title": "Preface",
+    "authors": "A. Bellogin, L. Boratto, F. Cena, A.G. Cossatin, T. Huibers, S. Kleanthous, E. Lex, M. Landoni, F.M. Malloci, M. Marras, N. Mauro, E. Murgia, M.S. Pera",
+    "venue": "Communications in Computer and Information Science",
+    "year": 2026,
+    "doi": null,
     "pdf": null,
     "note": ""
   },
@@ -63,6 +151,17 @@
     "year": 2026,
     "doi": "10.1016/j.ipm.2026.104681",
     "pdf": "https://iris.unito.it/retrieve/d6ffb75d-0836-4596-83f8-2c49fce82641/1-s2.0-S0957417425025461-main.pdf",
+    "note": ""
+  },
+  {
+    "id": "orcid_216627771_toward_personalized_meditation",
+    "type": "workshop",
+    "title": "Toward Personalized Meditation Recommendations for Digital Well-Being",
+    "authors": "Angelo Geninatti Cossatin, Noemi Mauro, Lien Michiels, Sole Pera",
+    "venue": "Joint Proceedings of the ACM UMAP 2026 Workshops",
+    "year": 2026,
+    "doi": null,
+    "pdf": null,
     "note": ""
   },
   {
