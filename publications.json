@@ -123,7 +123,7 @@
   {
     "id": "orcid_216589965_preface",
     "type": "workshop",
-    "title": "Preface",
+    "title": "Preface to Advances in bias, fairness, and understudied users in information retrieval : 6th international workshop, BIAS 2025 and second international workshop, IR4U2 2025, Padua, Italy, July 17, 2025 : revised selected papers",
     "authors": "A. Bellogin, L. Boratto, F. Cena, A.G. Cossatin, T. Huibers, S. Kleanthous, E. Lex, M. Landoni, F.M. Malloci, M. Marras, N. Mauro, E. Murgia, M.S. Pera",
     "venue": "Communications in Computer and Information Science",
     "year": 2026,
@@ -161,7 +161,7 @@
     "venue": "Joint Proceedings of the ACM UMAP 2026 Workshops",
     "year": 2026,
     "doi": null,
-    "pdf": null,
+    "pdf": "https://ceur-ws.org/Vol-4206/UMAP4GOOD-7.pdf",
     "note": ""
   },
   {
