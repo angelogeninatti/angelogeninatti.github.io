@@ -30,7 +30,7 @@ ORCID_ID  = "0009-0007-5378-7061"
 BASE      = f"https://pub.orcid.org/v3.0/{ORCID_ID}"
 HEADERS   = {"Accept": "application/json"}
 OUT       = Path(__file__).parent / "publications.json"
-DELAY     = 0.15   # seconds between detail requests (be polite to ORCID)
+DELAY     = 0.25   # seconds between detail requests (be polite to ORCID)
 
 # ORCID type → our type
 TYPE_MAP = {
