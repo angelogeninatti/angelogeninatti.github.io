@@ -151,8 +151,13 @@ def title_sim(a: str, b: str) -> float:
     return SequenceMatcher(None, a.lower(), b.lower()).ratio()
 
 
-def find_existing(existing: list, doi: Optional[str], title: str) -> Optional[dict]:
-    """Return the first existing entry that matches by DOI or (≥90%) title similarity."""
+def find_existing(existing: list, doi: Optional[str], title: str, put_code: Optional[int] = None) -> Optional[dict]:
+    """Return the first existing entry that matches by put-code prefix, DOI, or (≥90%) title similarity."""
+    if put_code is not None:
+        prefix = f"orcid_{put_code}_"
+        for e in existing:
+            if (e.get("id") or "").startswith(prefix):
+                return e
     if doi:
         doi_l = doi.lower()
         for e in existing:
@@ -186,7 +191,7 @@ def main() -> None:
 
         doi = extract_doi(s.get("external-ids"))
 
-        match = find_existing(existing, doi, title)
+        match = find_existing(existing, doi, title, put_code)
 
         if match is not None:
             # ── Existing entry: only fill in a missing DOI ──────────────────
