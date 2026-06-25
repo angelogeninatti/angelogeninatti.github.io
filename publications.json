@@ -19,7 +19,8 @@
     "year": 2026,
     "doi": "10.1007/978-3-032-13342-7_1",
     "pdf": null,
-    "note": ""
+    "note": "",
+    "presented": true
   },
   {
     "id": "orcid_201194319_balancing_sensory_needs__inter",
@@ -30,7 +31,8 @@
     "year": 2026,
     "doi": "10.1007/978-3-032-12717-4_4",
     "pdf": null,
-    "note": ""
+    "note": "",
+    "presented": true
   },
   {
     "id": "orcid_216627773_beyond_navigation__enabling_in",
@@ -41,7 +43,8 @@
     "year": 2026,
     "doi": null,
     "pdf": "https://ceur-ws.org/Vol-4206/SOCIALIZE-04.pdf",
-    "note": ""
+    "note": "",
+    "presented": true
   },
   {
     "id": "orcid_216627770_enhancing_access_to_movie_cult",
@@ -63,7 +66,8 @@
     "year": 2026,
     "doi": "10.1145/3774935.3806159",
     "pdf": null,
-    "note": ""
+    "note": "",
+    "presented": true
   },
   {
     "id": "orcid_216405372_first_international_workshop_o",
@@ -107,7 +111,8 @@
     "year": 2026,
     "doi": "10.1145/3774935.3806150",
     "pdf": null,
-    "note": ""
+    "note": "",
+    "presented": true
   },
   {
     "id": "orcid_214091820_now_that_your_system_has_been",
@@ -162,7 +167,8 @@
     "year": 2026,
     "doi": null,
     "pdf": "https://ceur-ws.org/Vol-4206/UMAP4GOOD-7.pdf",
-    "note": ""
+    "note": "",
+    "presented": true
   },
   {
     "id": "orcid_187846914_2nd_workshop_on_information_re",
@@ -184,7 +190,8 @@
     "year": 2025,
     "doi": null,
     "pdf": "https://ceur-ws.org/Vol-4026/paper2.pdf",
-    "note": ""
+    "note": "",
+    "presented": true
   },
   {
     "id": "orcid_187221525_tell_me_more__integrating_llms",
@@ -206,7 +213,8 @@
     "year": 2024,
     "doi": "10.1145/3631700.3664904",
     "pdf": "https://iris.unito.it/retrieve/846b0257-6a59-441c-9b98-9d1a88c83363/PATCH_2024___sustainable_tourism.pdf",
-    "note": ""
+    "note": "",
+    "presented": true
   },
   {
     "id": "orcid_162534448_promoting_green_fashion_consum",
@@ -228,7 +236,8 @@
     "year": 2024,
     "doi": "10.1145/3631700.3664922",
     "pdf": null,
-    "note": ""
+    "note": "",
+    "presented": true
   },
   {
     "id": "orcid_162534602_demo__the_triangolazioni_mobil",
@@ -239,7 +248,8 @@
     "year": 2023,
     "doi": "10.1145/3605390.3610808",
     "pdf": "https://iris.unito.it/retrieve/234bab47-95c2-4d97-95c7-31faec0557a8/AuthorCopy.pdf",
-    "note": ""
+    "note": "",
+    "presented": true
   },
   {
     "id": "orcid_162534447_enriching_recommender_systems",
@@ -250,7 +260,8 @@
     "year": 2023,
     "doi": "10.1109/WI-IAT59888.2023.00037",
     "pdf": "https://iris.unito.it/retrieve/c8cbb9dc-d7c3-41d1-b604-72a231c71567/WI_2023___Sustainability.pdf",
-    "note": ""
+    "note": "",
+    "presented": true
   },
   {
     "id": "orcid_162534445_synchronized_multi_list_user_i",
@@ -261,7 +272,8 @@
     "year": 2023,
     "doi": "10.1145/3563359.3597382",
     "pdf": "https://iris.unito.it/retrieve/21d00d8d-8222-4c5a-baec-261f52242e98/EXUM_2023%20%281%29.pdf",
-    "note": ""
+    "note": "",
+    "presented": true
   },
   {
     "id": "orcid_138938971_a_mobile_guide_to_explore_inte",
