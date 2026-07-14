@@ -1,0 +1,23 @@
+[
+  {
+    "date": "2024–2025",
+    "title": "SmartScholars",
+    "org": "University of Turin - funded by Fondazione CRT",
+    "desc": "VR-based peer-tutoring research project. Role: research and software development.",
+    "notes": ""
+  },
+  {
+    "date": "2023–present",
+    "title": "SPACES",
+    "org": "University of Turin - funded by Fondazione CRT",
+    "desc": "Adaptive support for participation in groups and activities for adults with high-functioning\n              autism spectrum disorder. Role: research on group formation approaches.",
+    "notes": ""
+  },
+  {
+    "date": "2021–present",
+    "title": "Triangolazioni",
+    "org": "University of Turin",
+    "desc": "Web application visualising semantic interconnections between points of interest for\n              cultural heritage exploration. Role: researcher and software engineer.",
+    "notes": ""
+  }
+]

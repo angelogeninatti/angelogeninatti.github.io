@@ -1,0 +1,71 @@
+{
+  "courses": [
+    {
+      "date": "2026",
+      "title": "Lecturer — Machine Learning",
+      "org": "University of Turin, SUISS",
+      "desc": "Undergraduate-level course on machine learning.",
+      "notes": ""
+    },
+    {
+      "date": "2023–2025",
+      "title": "Lecturer — \"Recommender Systems and Personalized User Experience\"",
+      "org": "PhD Programme in Computer Science, University of Turin",
+      "desc": "Annual 3-hour lecture on <em>Neural Networks in Recommender Systems</em>.",
+      "notes": ""
+    },
+    {
+      "date": "2023–2024",
+      "title": "Guest Lecture — Databases (PostgreSQL)",
+      "org": "University of Turin, Department of Computer Science",
+      "desc": "Hands-on 2-hour lecture on PostgreSQL usage.",
+      "notes": ""
+    },
+    {
+      "date": "2023–2026",
+      "title": "High School Orientation Activity",
+      "org": "University of Turin, Department of Computer Science",
+      "desc": "Annual 2-hour workshop: <em>Building a Recommender System with Python</em>.",
+      "notes": ""
+    },
+    {
+      "date": "2019–2025",
+      "title": "Subject Matter Expert — Programming III",
+      "org": "University of Turin, Department of Computer Science",
+      "desc": "",
+      "notes": ""
+    }
+  ],
+  "studentSupport": [
+    {
+      "date": "2025–present",
+      "title": "Student Collaborator — Fundamentals of Computer Science (Art. 76)",
+      "org": "University of Turin, Department of Computer Science",
+      "desc": "Exam assistance.",
+      "notes": ""
+    },
+    {
+      "date": "2023–present",
+      "title": "Student Collaborator — Programming III &amp; Databases (Art. 76)",
+      "org": "University of Turin, Department of Computer Science",
+      "desc": "Exam assistance and student support.",
+      "notes": ""
+    },
+    {
+      "date": "2019–2020",
+      "title": "Tutoring for Students with Disabilities or Learning Disorders",
+      "org": "University of Turin, Department of Computer Science",
+      "desc": "Note-taking and study support for Algorithms &amp; Data Structures, Formal Languages, and HCI courses.",
+      "notes": ""
+    }
+  ],
+  "thesisSupervision": [
+    {
+      "date": "2025",
+      "title": "Co-supervisor — 7 Bachelor's Theses",
+      "org": "University of Turin, Department of Computer Science",
+      "desc": "Topics included: VR peer-tutoring, MLP-based matchmaking algorithms for peer-to-peer\n              tutoring, activity recommendation with clustering and neural methods, and\n              Points-of-Interest recommendation web applications.",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "date": "Mar 2026–Present",
+    "title": "Post-doctoral Researcher",
+    "org": "University of Turin, Department of Computer Science, Italy",
+    "desc": "",
+    "notes": ""
+  },
+  {
+    "date": "Mar–Jun 2025",
+    "title": "Visiting Researcher",
+    "org": "University of Copenhagen — Copenhagen, Denmark",
+    "desc": "Research visit hosted by Prof. Maria Maistro. Focus on fairness evaluation in recommender systems.",
+    "notes": ""
+  },
+  {
+    "date": "Nov 2022–Mar 2026",
+    "title": "PhD Researcher in Computer Science",
+    "org": "University of Turin, Department of Computer Science, Italy",
+    "desc": "Thesis: <em>Intelligent Systems for Good</em>.<br/>\n              Supervisors: Liliana Ardissono, Noemi Mauro.<br>\n              Graduated with Honors.",
+    "notes": ""
+  },
+  {
+    "date": "Jul 2021–Oct 2022",
+    "title": "Research Fellow",
+    "org": "University of Turin, Department of Computer Science",
+    "desc": "Development of a web application presenting multi-disciplinary thematic trails connected\n              to culturally significant places. Use of ontologies and NLP for extraction, understanding, and semantic access to textual data.",
+    "notes": ""
+  }
+]

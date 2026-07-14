@@ -1,0 +1,12 @@
+{
+  "interests": [
+    { "text": "Recommender Systems", "notes": "" },
+    { "text": "User Modeling", "notes": "" },
+    { "text": "Personalization", "notes": "" },
+    { "text": "Human-Computer Interaction", "notes": "" },
+    { "text": "Sustainable Artificial Intelligence", "notes": "" },
+    { "text": "Machine Learning", "notes": "" },
+    { "text": "Large Language Models", "notes": "" },
+    { "text": "Information Retrieval", "notes": "" }
+  ]
+}

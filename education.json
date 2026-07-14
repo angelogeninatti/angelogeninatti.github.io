@@ -1,0 +1,30 @@
+[
+  {
+    "date": "Nov 2022 – Mar 2026",
+    "title": "PhD in Computer Science, with Honors",
+    "org": "University of Turin, Department of Computer Science",
+    "desc": "Thesis: <em>Intelligent Systems for Good</em>.",
+    "notes": ""
+  },
+  {
+    "date": "Oct 2020 – Jul 2022",
+    "title": "Master's Degree in Computer Science – 110/110 cum laude, with Distinction",
+    "org": "University of Turin, Department of Computer Science",
+    "desc": "Thesis: <em>Ethics and Environmental Sustainability in Recommender Systems</em>. Winner of the \"Pietro Torasso\" Prize for the Best Master's Thesis in Artificial Intelligence (2022).",
+    "notes": ""
+  },
+  {
+    "date": "Oct 2017 – Jun 2020",
+    "title": "Bachelor's Degree in Computer Science – 110/110 cum laude",
+    "org": "University of Turin, Department of Computer Science",
+    "desc": "Thesis: <em>Development of a content-based recommender system for the personalized suggestion of experiential goods</em>.",
+    "notes": ""
+  },
+  {
+    "date": "Oct 2017 – Dec 2022",
+    "title": "Diploma of Advanced Qualification (equivalent to a second-level Master's degree) – 70/70 cum laude",
+    "org": "University of Turin, School of Advanced Studies \"Ferdinando Rossi\"",
+    "desc": "Honors program with strict merit requirements and a focus on interdisciplinarity.<br>Thesis: <em>Single-cell RNA Sequencing</em>.",
+    "notes": ""
+  }
+]

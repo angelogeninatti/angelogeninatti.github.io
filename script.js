@@ -76,7 +76,6 @@ function pubCard(pub) {
         <div class="pub-authors">${highlightAuthor(pub.authors)}</div>
         <div class="pub-venue">${pub.venue}${pub.year ? ", " + pub.year : ""}</div>
         ${actions.length ? `<div class="pub-actions">${actions.join("")}</div>` : ""}
-        ${pub.note && !pub.note.startsWith("Added automatically") ? `<div class="pub-note">${pub.note}</div>` : ""}
       </div>
     </div>`;
 }

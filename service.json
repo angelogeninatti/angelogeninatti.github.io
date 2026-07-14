@@ -1,0 +1,58 @@
+{
+  "conferenceOrganisation": [
+    {
+      "date": "2027",
+      "title": "Accessibility &amp; Inclusion Chair",
+      "org": "IUI 2027 — ACM Intelligent User Interfaces",
+      "desc": "",
+      "notes": ""
+    },
+    {
+      "date": "2026",
+      "title": "Workshop Co-organiser",
+      "org": "UMAP4Good @ UMAP 2026<br>RecSoGood @ RecSys 2026",
+      "desc": "",
+      "notes": ""
+    },
+    {
+      "date": "2025",
+      "title": "Proceedings Chair",
+      "org": "IIR 2025 — 16th Italian Information Retrieval Workshop",
+      "desc": "",
+      "notes": ""
+    },
+    {
+      "date": "2025",
+      "title": "Session Chair &amp; Workshop Co-organiser",
+      "org": "IR4U2 2025 — Workshop on IR for Understudied Users @ SIGIR 2025",
+      "desc": "",
+      "notes": ""
+    }
+  ],
+  "studentVolunteering": [
+    {
+      "date": "2023–2025",
+      "title": "Student Volunteer",
+      "org": "ACM RecSys 2025<br>ACM UMAP 2024<br>ACM UMAP 2023",
+      "desc": "",
+      "notes": ""
+    }
+  ],
+  "awardsGrants": [
+    {
+      "text": "<strong>\"Pietro Torasso\" Prize</strong> for the Best Master's Thesis in Artificial Intelligence —\n              <em>Ethics and Environmental Sustainability in Recommender Systems</em>.",
+      "year": "2022 · University of Turin",
+      "notes": ""
+    },
+    {
+      "text": "<strong>3 Travel Grants</strong> awarded by competitive scientific committee selection:\n              ACM RecSys 2025, ACM UMAP 2024, ACM UMAP 2023.",
+      "year": "2023–2025",
+      "notes": ""
+    },
+    {
+      "text": "<strong>Google Cloud Research Grant</strong> for academic computing resources.",
+      "year": "2024–2025 · 2025–2026",
+      "notes": ""
+    }
+  ]
+}
