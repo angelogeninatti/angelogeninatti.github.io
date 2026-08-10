@@ -47,6 +47,17 @@
     "presented": true
   },
   {
+    "id": "orcid_223193130_breaking_the_loop__a_human_cen",
+    "type": "journal",
+    "title": "Breaking the loop: a human-centred vision for information retrieval systems that serve all users",
+    "authors": "Angelo Geninatti Cossatin, Hrishita Chakrabarti, Emiliana Murgia, Simone Ooms, Diletta Micol Tobia, Robin Ungruh, Federica Cena, Stephane Aline Chaudron, Theo Huibers, Monica Landoni, Maria Soledad Pera, Noemi Mauro",
+    "venue": "Behaviour & Information Technology",
+    "year": 2026,
+    "doi": "10.1080/0144929x.2026.2714166",
+    "pdf": null,
+    "note": ""
+  },
+  {
     "id": "orcid_216627770_enhancing_access_to_movie_cult",
     "type": "workshop",
     "title": "Enhancing Access to Movie Cultural Heritage through Narrative-Enriched Item Representations",
