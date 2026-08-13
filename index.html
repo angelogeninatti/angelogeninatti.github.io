@@ -9,7 +9,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" /></noscript>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -50,10 +52,14 @@
             <circle cx="12" cy="7" r="4"/>
           </svg>
         </div>
-        <img class="hero-avatar" id="hero-photo" src="photo.jpg" alt="Angelo Geninatti Cossatin"
-             style="display:none"
-             onload="this.style.display='block'; document.getElementById('avatar-placeholder').style.display='none';"
-             onerror="this.style.display='none';" />
+        <picture>
+          <source srcset="photo.webp" type="image/webp">
+          <img class="hero-avatar" id="hero-photo" src="photo.jpg" alt="Angelo Geninatti Cossatin"
+               width="480" height="720"
+               style="display:none"
+               onload="this.style.display='block'; document.getElementById('avatar-placeholder').style.display='none';"
+               onerror="this.style.display='none';" />
+        </picture>
       </div>
 
       <div class="hero-text">
@@ -113,6 +119,25 @@
     <div class="pub-year-group">
       <div class="pub-year-header">2026</div>
       
+    <div class="pub-card fade-in" data-type="journal">
+      <div class="pub-type-stripe journal"></div>
+      <div class="pub-body">
+        <div class="pub-meta">
+          <span class="pub-type-badge journal">Journal</span>
+        </div>
+        <div class="pub-title"><a href="https://doi.org/10.1080/0144929x.2026.2714166" target="_blank" rel="noopener">Breaking the loop: a human-centred vision for information retrieval systems that serve all users</a></div>
+        <div class="pub-authors"><strong>Angelo Geninatti Cossatin</strong>, Hrishita Chakrabarti, Emiliana Murgia, Simone Ooms, Diletta Micol Tobia, Robin Ungruh, Federica Cena, Stephane Aline Chaudron, Theo Huibers, Monica Landoni, Maria Soledad Pera, Noemi Mauro</div>
+        <div class="pub-venue">Behaviour & Information Technology, 2026</div>
+        <div class="pub-actions">
+      <a class="pub-action-btn" href="https://doi.org/10.1080/0144929x.2026.2714166" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+        </svg>
+        DOI
+      </a></div>
+      </div>
+    </div>
     <div class="pub-card fade-in" data-type="journal">
       <div class="pub-type-stripe journal"></div>
       <div class="pub-body">
