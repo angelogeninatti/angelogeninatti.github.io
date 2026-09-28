@@ -170,6 +170,17 @@
     "note": ""
   },
   {
+    "id": "orcid_227789194_third_international_workshop_o",
+    "type": "conference",
+    "title": "Third International Workshop on Recommender Systems for Sustainability and Social Good (RecSoGood 2026)",
+    "authors": "Ludovico Boratto, Allegra De Filippo, Angelo Geninatti Cossatin, Elisabeth Lex, Noemi Mauro, Giuseppe Spillo",
+    "venue": "",
+    "year": 2026,
+    "doi": "10.1145/3773078.3831725",
+    "pdf": null,
+    "note": ""
+  },
+  {
     "id": "orcid_216627771_toward_personalized_meditation",
     "type": "workshop",
     "title": "Toward Personalized Meditation Recommendations for Digital Well-Being",

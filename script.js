@@ -153,6 +153,8 @@ function setupNavHighlight() {
 
 /* ── Fade-in on scroll ────────────────────────────────────── */
 function observeFadeIns() {
+  // Reveal once the top edge is ~20px into the viewport, independent of the
+  // element's height (a % threshold on a tall section needs a lot of scrolling).
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -160,7 +162,7 @@ function observeFadeIns() {
         obs.unobserve(e.target);
       }
     });
-  }, { threshold: 0.08 });
+  }, { threshold: 0, rootMargin: "0px 0px -20px 0px" });
 
   document.querySelectorAll(".fade-in:not(.visible)").forEach(el => obs.observe(el));
 }
