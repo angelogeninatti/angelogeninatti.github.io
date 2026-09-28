@@ -81,7 +81,7 @@ def pub_card(pub):
         </div>
         <div class="pub-title">{title}</div>
         <div class="pub-authors">{highlight_author(pub['authors'])}</div>
-        <div class="pub-venue">{pub['venue']}{', ' + str(year) if year else ''}</div>
+        <div class="pub-venue">{', '.join(str(x) for x in (pub['venue'], year) if x)}</div>
         {f'<div class="pub-actions">{"".join(actions)}</div>' if actions else ''}
       </div>
     </div>'''

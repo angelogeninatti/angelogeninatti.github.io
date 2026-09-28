@@ -74,7 +74,7 @@ function pubCard(pub) {
         </div>
         <div class="pub-title">${title}</div>
         <div class="pub-authors">${highlightAuthor(pub.authors)}</div>
-        <div class="pub-venue">${pub.venue}${pub.year ? ", " + pub.year : ""}</div>
+        <div class="pub-venue">${[pub.venue, pub.year].filter(Boolean).join(", ")}</div>
         ${actions.length ? `<div class="pub-actions">${actions.join("")}</div>` : ""}
       </div>
     </div>`;
