@@ -2,9 +2,16 @@
   "courses": [
     {
       "date": "2026",
+      "title": "Contract Professor — Web Technologies",
+      "org": "University of Turin, Department of Computer Science",
+      "desc": "",
+      "notes": ""
+    },
+    {
+      "date": "2026",
       "title": "Lecturer — Machine Learning",
       "org": "University of Turin, SUISS",
-      "desc": "Undergraduate-level course on machine learning.",
+      "desc": "Undergraduate-level course on machine learning (2 editions).",
       "notes": ""
     },
     {
