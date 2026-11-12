@@ -2,7 +2,7 @@
 # Run update_pubs.py and send a desktop notification if publications changed.
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PYTHON=/home/angelo/anaconda3/bin/python3
+PYTHON="$SCRIPT_DIR/.venv/bin/python3"
 LOG="$SCRIPT_DIR/update_pubs.log"
 
 # Grab DISPLAY and DBUS from the active user session so notify-send works.
