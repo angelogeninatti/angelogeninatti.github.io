@@ -172,6 +172,7 @@ def main():
         ("div", "research-list", render_timeline(research)),
         ("div", "projects-list", render_timeline(projects)),
         ("div", "teaching-courses-list", render_timeline(teaching["courses"])),
+        ("div", "teaching-guest-lectures-list", render_timeline(teaching["guestLectures"])),
         ("div", "teaching-student-support-list", render_timeline(teaching["studentSupport"])),
         ("div", "teaching-thesis-list", render_timeline(teaching["thesisSupervision"])),
         ("div", "service-conference-list", render_timeline(service["conferenceOrganisation"])),
