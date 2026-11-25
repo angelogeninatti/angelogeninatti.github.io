@@ -60,8 +60,8 @@
     },
     {
       "date": "2024",
-      "title": "Databases (PostgreSQL)",
-      "org": "University of Turin, Department of Computer Science",
+      "title": "PostgreSQL",
+      "org": "Databases course, University of Turin, Department of Computer Science",
       "desc": "Hands-on 2-hour lecture on PostgreSQL usage.",
       "notes": ""
     }
