@@ -226,6 +226,7 @@ def main() -> None:
             "doi":     full_doi,
             "pdf":     None,
             "note":    "",
+            "featured": False,
         }
 
         existing.append(entry)

@@ -13,8 +13,20 @@ const TYPE_LABELS = {
   thesis:     "Thesis",
 };
 
+const TYPE_PLURALS = {
+  journal:    "journal papers",
+  conference: "conference papers",
+  workshop:   "workshop papers",
+  thesis:     "theses",
+};
+
+// Collapsed view shows this many of the most recent papers of one type
+// (journals for "All"). Keep in sync with PUB_COLLAPSE_LIMIT in generate_html.py.
+const PUB_COLLAPSE_LIMIT = 5;
+
 let allPubs = [];
 let activeFilter = "all";
+let pubToggle = null;
 
 async function loadPublications() {
   try {
@@ -35,7 +47,7 @@ function highlightAuthor(authors) {
   );
 }
 
-function pubCard(pub) {
+function pubCard(pub, extra = false) {
   const doiHref = pub.doi ? `https://doi.org/${pub.doi}` : null;
   const title = doiHref
       ? `<a href="${doiHref}" target="_blank" rel="noopener">${pub.title}</a>`
@@ -66,7 +78,7 @@ function pubCard(pub) {
   }
 
   return `
-    <div class="pub-card fade-in" data-type="${pub.type}">
+    <div class="pub-card fade-in${extra ? " is-extra" : ""}" data-type="${pub.type}">
       <div class="pub-type-stripe ${pub.type}"></div>
       <div class="pub-body">
         <div class="pub-meta">
@@ -82,10 +94,27 @@ function pubCard(pub) {
 
 const TYPE_ORDER = { journal: 0, conference: 1, workshop: 2, thesis: 3 };
 
+/* Publications visible while collapsed (mirror of shown_pubs() in
+   generate_html.py): those with "featured": true (most recent first, at most
+   PUB_COLLAPSE_LIMIT), topped up to PUB_COLLAPSE_LIMIT with the most recent
+   non-featured ones of the fill type (journals for "All", otherwise the
+   filtered type; any type if there are none of it). Same-year papers keep
+   their JSON order. */
+function shownPubs(filtered) {
+  const fillType = activeFilter === "all" ? "journal" : activeFilter;
+  const ordered = [...filtered].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+  let fill = ordered.filter(p => p.type === fillType);
+  if (fill.length === 0) fill = ordered;
+  const featured = ordered.filter(p => p.featured).slice(0, PUB_COLLAPSE_LIMIT);
+  const rest = fill.filter(p => !p.featured).slice(0, PUB_COLLAPSE_LIMIT - featured.length);
+  return new Set([...featured, ...rest]);
+}
+
 function renderPublications(pubs) {
   const container = document.getElementById("publications-list");
 
   const filtered = activeFilter === "all" ? pubs : pubs.filter(p => p.type === activeFilter);
+  const shown = shownPubs(filtered);
 
   const byYear = {};
   for (const p of filtered) {
@@ -102,15 +131,20 @@ function renderPublications(pubs) {
 
   if (years.length === 0) {
     container.innerHTML = `<p style="color:var(--muted);font-size:.9rem;">No publications in this category.</p>`;
+    pubToggle?.refresh();
     return;
   }
 
-  container.innerHTML = years.map(year => `
-    <div class="pub-year-group">
+  container.innerHTML = years.map(year => {
+    const groupExtra = byYear[year].some(p => shown.has(p)) ? "" : " is-extra";
+    return `
+    <div class="pub-year-group${groupExtra}">
       <div class="pub-year-header">${year}</div>
-      ${byYear[year].map(pubCard).join("")}
-    </div>`).join("");
+      ${byYear[year].map(p => pubCard(p, !shown.has(p))).join("")}
+    </div>`;
+  }).join("");
 
+  pubToggle?.refresh();
   observeFadeIns();
 }
 
@@ -120,8 +154,71 @@ function setupFilters() {
       document.querySelectorAll(".pub-filter").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
       activeFilter = btn.dataset.filter;
+      // Each filter starts collapsed, showing its own selection.
+      document.getElementById("publications-list").classList.remove("expanded");
       renderPublications(allPubs);
     });
+  });
+}
+
+
+/* ── "Show more" toggles for collapsed lists ──────────────── */
+/* Lists render every item; the ones beyond the collapse limit carry the
+   "is-extra" class and are hidden by CSS until the list gets "expanded". */
+function makeToggle(list, collapsedLabel) {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "show-more-btn";
+  if (list.id) btn.setAttribute("aria-controls", list.id);
+
+  btn.refresh = () => {
+    const expanded = list.classList.contains("expanded");
+    btn.hidden = !list.querySelector(".is-extra");
+    btn.textContent = expanded ? "Show less" : collapsedLabel();
+    btn.setAttribute("aria-expanded", String(expanded));
+  };
+
+  btn.addEventListener("click", () => {
+    // Keep the button at the same spot on screen when collapsing, so the
+    // reader isn't left far below the list they just closed.
+    const before = btn.getBoundingClientRect().top;
+    if (list.classList.contains("expanded")) {
+      // Collapsing scrolls content from above into view. Anything up there
+      // that hasn't faded in yet (e.g. after a reload restored the scroll
+      // position mid-page) should just be there, not animate in.
+      document.querySelectorAll(".fade-in:not(.visible)").forEach(el => {
+        if (el.compareDocumentPosition(btn) & Node.DOCUMENT_POSITION_FOLLOWING) revealInstantly(el);
+      });
+    }
+    list.classList.toggle("expanded");
+    btn.refresh();
+    if (!list.classList.contains("expanded")) {
+      window.scrollBy({ top: btn.getBoundingClientRect().top - before, behavior: "instant" });
+    }
+  });
+
+  btn.refresh();
+  list.after(btn);
+  return btn;
+}
+
+function setupListToggles() {
+  document.querySelectorAll(".timeline, .awards-list").forEach(list => {
+    const hidden = list.querySelectorAll(":scope > .is-extra").length;
+    if (hidden) makeToggle(list, () => `Show ${hidden} more`);
+  });
+}
+
+function setupPubToggle() {
+  const list = document.getElementById("publications-list");
+  pubToggle = makeToggle(list, () => {
+    const n = activeFilter === "all"
+        ? allPubs.length
+        : allPubs.filter(p => p.type === activeFilter).length;
+    // Before publications.json loads, count the cards baked into the HTML.
+    const count = n || list.querySelectorAll(".pub-card").length;
+    const what = activeFilter === "all" ? "publications" : TYPE_PLURALS[activeFilter] ?? "publications";
+    return `Show all ${count} ${what}`;
   });
 }
 
@@ -152,13 +249,23 @@ function setupNavHighlight() {
 }
 
 /* ── Fade-in on scroll ────────────────────────────────────── */
+function revealInstantly(el) {
+  el.style.transition = "none";
+  el.classList.add("visible");
+  void el.offsetHeight; // apply the final state before restoring the transition
+  el.style.transition = "";
+}
+
 function observeFadeIns() {
   // Reveal once the top edge is ~20px into the viewport, independent of the
   // element's height (a % threshold on a tall section needs a lot of scrolling).
+  // Only content scrolled into view from below fades in; content coming in
+  // from above (scrolling up after landing mid-page) appears as is.
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
-        e.target.classList.add("visible");
+        if (e.boundingClientRect.top < (e.rootBounds?.top ?? 0)) revealInstantly(e.target);
+        else e.target.classList.add("visible");
         obs.unobserve(e.target);
       }
     });
@@ -198,6 +305,8 @@ function setupHamburger() {
 
 /* ── Boot ─────────────────────────────────────────────────── */
 document.addEventListener("DOMContentLoaded", () => {
+  setupPubToggle();
+  setupListToggles();
   loadPublications();
   setupFilters();
   setupNavHighlight();

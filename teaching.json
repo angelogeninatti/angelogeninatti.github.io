@@ -5,21 +5,24 @@
       "title": "Contract Professor — Web Technologies",
       "org": "University of Turin, Department of Computer Science",
       "desc": "",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2026",
       "title": "Lecturer — Machine Learning",
       "org": "University of Turin, SUISS",
       "desc": "Undergraduate-level course on machine learning (2 editions).",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2025–present",
       "title": "Subject Matter Expert — Programming III",
       "org": "University of Turin, Department of Computer Science",
       "desc": "",
-      "notes": ""
+      "notes": "",
+      "featured": false
     }
   ],
   "guestLectures": [
@@ -28,42 +31,48 @@
       "title": "Coding with Generative AI",
       "org": "Programming III course, University of Turin, Department of Computer Science",
       "desc": "3-hour workshop.",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2026",
       "title": "Sustainable Recommendation",
       "org": "Illinois Institute of Technology, Chicago, Illinois, USA",
       "desc": "1-hour invited talk.",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2026",
       "title": "Recommendation for Social Good",
       "org": "Knowledge Graphs and Recommender Systems course, University of Turin, Department of Computer Science",
       "desc": "1-hour lecture.",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2023–2026",
       "title": "High School Orientation Workshop — Building a Recommender System with Python",
       "org": "University of Turin, Department of Computer Science",
       "desc": "Annual 2-hour workshop for high school students.",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2024–2025",
       "title": "Neural Networks in Recommender Systems",
       "org": "PhD course \"Recommender Systems and Personalized User Experience\", University of Turin",
       "desc": "Annual 3-hour lecture.",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2024",
       "title": "PostgreSQL",
       "org": "Databases course, University of Turin, Department of Computer Science",
       "desc": "Hands-on 2-hour lecture on PostgreSQL usage.",
-      "notes": ""
+      "notes": "",
+      "featured": false
     }
   ],
   "studentSupport": [
@@ -72,28 +81,32 @@
       "title": "Student Collaborator — Fundamentals of Computer Science (Art. 76)",
       "org": "University of Turin, Department of Computer Science",
       "desc": "Exam assistance.",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2024–present",
       "title": "Student Collaborator — Programming III (Art. 76)",
       "org": "University of Turin, Department of Computer Science",
       "desc": "Exam assistance and student support.",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2023–present",
       "title": "Student Collaborator — Databases (Art. 76)",
       "org": "University of Turin, Department of Computer Science",
       "desc": "Exam assistance and student support.",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2019–2020",
       "title": "Tutoring for Students with Disabilities or Learning Disorders",
       "org": "University of Turin, Department of Computer Science",
       "desc": "Note-taking and study support for Algorithms &amp; Data Structures, Formal Languages, and HCI courses.",
-      "notes": ""
+      "notes": "",
+      "featured": false
     }
   ],
   "thesisSupervision": [
@@ -102,7 +115,8 @@
       "title": "Theses co-supervision",
       "org": "University of Turin, Department of Computer Science",
       "desc": "12 Bachelor's Theses, 1 Master's Thesis",
-      "notes": ""
+      "notes": "",
+      "featured": false
     }
   ]
 }

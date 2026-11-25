@@ -8,7 +8,8 @@
     "year": 2026,
     "doi": "10.1145/3774935.3812714",
     "pdf": "https://iris.unito.it/retrieve/44b68c35-d391-4f2a-a528-bbea3776f81c/3774935.3812714.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_201210430_a_holistic_view_of_sustainabil",
@@ -20,7 +21,8 @@
     "doi": "10.1007/978-3-032-13342-7_1",
     "pdf": null,
     "note": "",
-    "presented": true
+    "presented": true,
+    "featured": false
   },
   {
     "id": "orcid_201194319_balancing_sensory_needs__inter",
@@ -32,7 +34,8 @@
     "doi": "10.1007/978-3-032-12717-4_4",
     "pdf": null,
     "note": "",
-    "presented": true
+    "presented": true,
+    "featured": false
   },
   {
     "id": "orcid_216627773_beyond_navigation__enabling_in",
@@ -44,7 +47,8 @@
     "doi": null,
     "pdf": "https://ceur-ws.org/Vol-4206/SOCIALIZE-04.pdf",
     "note": "",
-    "presented": true
+    "presented": true,
+    "featured": false
   },
   {
     "id": "orcid_223193130_breaking_the_loop__a_human_cen",
@@ -55,7 +59,8 @@
     "year": 2026,
     "doi": "10.1080/0144929x.2026.2714166",
     "pdf": "https://iris.unito.it/retrieve/2633cd5b-d6fd-4021-bee8-9d4842aec86b/Breaking%20the%20loop%20%20a%20human-centred%20vision%20for%20information%20retrieval%20systems%20that%20serve%20all%20users%20%281%29.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_233598451_digital_representation_of_narr",
@@ -66,7 +71,8 @@
     "year": 2026,
     "doi": null,
     "pdf": null,
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_216627770_enhancing_access_to_movie_cult",
@@ -77,7 +83,8 @@
     "year": 2026,
     "doi": null,
     "pdf": "https://ceur-ws.org/Vol-4206/PATCH-06.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_216405375_evaluating_the_role_of_context",
@@ -89,7 +96,8 @@
     "doi": "10.1145/3774935.3806159",
     "pdf": "https://iris.unito.it/retrieve/6c2c5312-0ed6-4919-9edf-3284cd060783/3774935.3806159.pdf",
     "note": "",
-    "presented": true
+    "presented": true,
+    "featured": false
   },
   {
     "id": "orcid_216405372_first_international_workshop_o",
@@ -100,7 +108,8 @@
     "year": 2026,
     "doi": "10.1145/3774935.3802525",
     "pdf": "https://iris.unito.it/retrieve/4bf9a2c1-62d9-4842-9509-96b2025abadd/3774935.3802525.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_208341660_from_scenes_to_places__enhanci",
@@ -111,7 +120,8 @@
     "year": 2026,
     "doi": "10.1145/3801551",
     "pdf": "https://iris.unito.it/retrieve/18c40c3f-2e43-4c5d-8ccd-f3f4c0127cad/REVIS-inPressVersion.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_216627772_generative_ai_as_an_adaptive_n",
@@ -122,7 +132,8 @@
     "year": 2026,
     "doi": null,
     "pdf": "https://ceur-ws.org/Vol-4206/PATCH-02.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_216405374_investigating_the_gap_between",
@@ -134,7 +145,8 @@
     "doi": "10.1145/3774935.3806150",
     "pdf": "https://iris.unito.it/retrieve/4c6c34c1-7fef-4fb9-b3de-d2f79e2903b9/3774935.3806150.pdf",
     "note": "",
-    "presented": true
+    "presented": true,
+    "featured": false
   },
   {
     "id": "orcid_214091820_now_that_your_system_has_been",
@@ -145,7 +157,8 @@
     "year": 2026,
     "doi": "10.1145/3814609",
     "pdf": null,
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_216589965_preface",
@@ -156,7 +169,8 @@
     "year": 2026,
     "doi": "https://doi.org/10.1007/978-3-032-12717-4",
     "pdf": null,
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_187376260_shrinking_for_success__multimo",
@@ -167,7 +181,8 @@
     "year": 2026,
     "doi": "10.1016/j.eswa.2025.128929",
     "pdf": "https://iris.unito.it/retrieve/e9c39e1a-7df2-4bc2-aac4-e27905605436/LAM-EditorialVersion.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_205419036_the_autonomy_equation__how_age",
@@ -178,7 +193,8 @@
     "year": 2026,
     "doi": "10.1016/j.ipm.2026.104681",
     "pdf": "https://iris.unito.it/retrieve/d6ffb75d-0836-4596-83f8-2c49fce82641/1-s2.0-S0957417425025461-main.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_227789194_third_international_workshop_o",
@@ -189,7 +205,8 @@
     "year": 2026,
     "doi": "10.1145/3773078.3831725",
     "pdf": null,
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_216627771_toward_personalized_meditation",
@@ -201,7 +218,8 @@
     "doi": null,
     "pdf": "https://ceur-ws.org/Vol-4206/UMAP4GOOD-7.pdf",
     "note": "",
-    "presented": true
+    "presented": true,
+    "featured": false
   },
   {
     "id": "orcid_187846914_2nd_workshop_on_information_re",
@@ -212,7 +230,8 @@
     "year": 2025,
     "doi": "10.1145/3726302.3730356",
     "pdf": "https://iris.unito.it/retrieve/0f5e03e9-be4a-4d2f-978d-41d58988b1c7/3726302.3730356.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_197146635_lean_and_green__computational",
@@ -224,7 +243,8 @@
     "doi": null,
     "pdf": "https://ceur-ws.org/Vol-4026/paper2.pdf",
     "note": "",
-    "presented": true
+    "presented": true,
+    "featured": false
   },
   {
     "id": "orcid_187221525_tell_me_more__integrating_llms",
@@ -235,7 +255,8 @@
     "year": 2025,
     "doi": "10.1007/S40558-025-00312-8",
     "pdf": "https://iris.unito.it/retrieve/87bdab6c-1e80-4330-9257-8c3ad54bc3ce/ITT-2025-editorialVersion.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_162576409_point_of_interest_recommender",
@@ -247,7 +268,8 @@
     "doi": "10.1145/3631700.3664904",
     "pdf": "https://iris.unito.it/retrieve/846b0257-6a59-441c-9b98-9d1a88c83363/PATCH_2024___sustainable_tourism.pdf",
     "note": "",
-    "presented": true
+    "presented": true,
+    "featured": false
   },
   {
     "id": "orcid_162534448_promoting_green_fashion_consum",
@@ -258,7 +280,8 @@
     "year": 2024,
     "doi": "10.1109/ACCESS.2024.3349710",
     "pdf": "https://iris.unito.it/retrieve/5f4743cb-5d4f-4d6a-8a79-abf4e87694d2/Article.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_162576408_promoting_green_fashion_consum",
@@ -270,7 +293,8 @@
     "doi": "10.1145/3631700.3664922",
     "pdf": null,
     "note": "",
-    "presented": true
+    "presented": true,
+    "featured": false
   },
   {
     "id": "orcid_162534602_demo__the_triangolazioni_mobil",
@@ -282,7 +306,8 @@
     "doi": "10.1145/3605390.3610808",
     "pdf": "https://iris.unito.it/retrieve/234bab47-95c2-4d97-95c7-31faec0557a8/AuthorCopy.pdf",
     "note": "",
-    "presented": true
+    "presented": true,
+    "featured": false
   },
   {
     "id": "orcid_162534447_enriching_recommender_systems",
@@ -294,7 +319,8 @@
     "doi": "10.1109/WI-IAT59888.2023.00037",
     "pdf": "https://iris.unito.it/retrieve/c8cbb9dc-d7c3-41d1-b604-72a231c71567/WI_2023___Sustainability.pdf",
     "note": "",
-    "presented": true
+    "presented": true,
+    "featured": false
   },
   {
     "id": "orcid_162534445_synchronized_multi_list_user_i",
@@ -306,7 +332,8 @@
     "doi": "10.1145/3563359.3597382",
     "pdf": "https://iris.unito.it/retrieve/21d00d8d-8222-4c5a-baec-261f52242e98/EXUM_2023%20%281%29.pdf",
     "note": "",
-    "presented": true
+    "presented": true,
+    "featured": false
   },
   {
     "id": "orcid_138938971_a_mobile_guide_to_explore_inte",
@@ -317,7 +344,8 @@
     "year": 2022,
     "doi": "10.1145/3511047.3537649",
     "pdf": "https://iris.unito.it/retrieve/26bba0de-f709-4ca7-aac4-1cdbbb58e915/PATCH_2022___Triangolazioni.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_138939021_exploring_semantically_interla",
@@ -328,7 +356,8 @@
     "year": 2022,
     "doi": "10.1145/3511095.3536366",
     "pdf": "https://iris.unito.it/retrieve/96070aa7-aad8-4f5f-8ce1-5f5d8a364901/HT_2022___Triangolazioni.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   },
   {
     "id": "orcid_138938908_beyond_traditional_cultural_he",
@@ -339,6 +368,7 @@
     "year": 2021,
     "doi": "10.1145/3450614.3463385",
     "pdf": "https://iris.unito.it/retrieve/e27ce431-c3dd-2581-e053-d805fe0acbaa/PATCH_2021.pdf",
-    "note": ""
+    "note": "",
+    "featured": false
   }
 ]

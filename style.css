@@ -93,7 +93,7 @@ nav {
 .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
 
 /* ── Section ──────────────────────────────────────────────── */
-section { padding: 5.5rem 0; }
+section { padding: 3.5rem 0; }
 section + section { border-top: 1px solid var(--border); }
 
 #publications { background: var(--bg-alt); }
@@ -106,7 +106,7 @@ section + section { border-top: 1px solid var(--border); }
   color: var(--primary);
   letter-spacing: -.04em;
   line-height: 1.1;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .section-title::before {
@@ -281,7 +281,7 @@ section + section { border-top: 1px solid var(--border); }
   background: var(--accent-light);
 }
 
-.pub-year-group { margin-bottom: 2.5rem; }
+.pub-year-group { margin-bottom: 1.75rem; }
 
 .pub-year-header {
   font-family: 'Space Grotesk', sans-serif;
@@ -399,10 +399,11 @@ section + section { border-top: 1px solid var(--border); }
 
 /* ── Experience ───────────────────────────────────────────── */
 .exp-section {
-  padding-top: 2.5rem;
+  margin-top: 1.75rem;
+  padding-top: 1.75rem;
   border-top: 1px solid var(--border);
 }
-.exp-section:first-child { border-top: none; padding-top: 0; }
+.exp-section:first-child { border-top: none; margin-top: 0; padding-top: 0; }
 
 /* Timeline */
 .timeline { display: flex; flex-direction: column; }
@@ -591,6 +592,70 @@ footer {
   text-decoration: none;
 }
 
+/* ── Collapsible lists ("Show more") ──────────────────────── */
+#publications-list:not(.expanded) .is-extra,
+.timeline:not(.expanded) > .is-extra,
+.awards-list:not(.expanded) > .is-extra { display: none; }
+
+/* Fade revealed items in on every expand. (The scroll-triggered .fade-in only
+   runs once per element; a CSS animation restarts whenever the element goes
+   from display:none back to visible.) Skip cards inside an already-animating
+   year group so their opacity doesn't compound. */
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: none; }
+}
+#publications-list.expanded .is-extra:not(.is-extra .is-extra),
+.timeline.expanded > .is-extra,
+.awards-list.expanded > .is-extra { animation: reveal .45s ease both; }
+
+@media (prefers-reduced-motion: reduce) {
+  #publications-list.expanded .is-extra,
+  .timeline.expanded > .is-extra,
+  .awards-list.expanded > .is-extra { animation: none; opacity: 1; transform: none; }
+}
+
+/* The last visible timeline item shouldn't keep its bottom gap. */
+.timeline:not(.expanded) > .tl-item:has(+ .is-extra) { padding-bottom: 0; }
+
+.show-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin-top: 1.1rem;
+  padding: .35rem .9rem;
+  border: 1.5px solid var(--border);
+  border-radius: 99px;
+  font: inherit;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: var(--accent);
+  background: var(--card);
+  cursor: pointer;
+  transition: all .15s;
+}
+.show-more-btn::after {
+  content: '';
+  width: .45em;
+  height: .45em;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-25%) rotate(45deg);
+  transition: transform .15s;
+}
+.show-more-btn[aria-expanded="true"]::after { transform: translateY(25%) rotate(-135deg); }
+.show-more-btn:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+.show-more-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.show-more-btn[hidden] { display: none; }
+
+/* Line the button up with the timeline's content column, not its dates. */
+.timeline + .show-more-btn { margin-left: calc(88px + 1.25rem); }
+#publications-list + .show-more-btn { margin-top: 0; }
+
 /* ── Responsive ───────────────────────────────────────────── */
 @media (max-width: 640px) {
   nav { padding: 0 1rem; overflow: visible; }
@@ -604,10 +669,12 @@ footer {
   .hero-text h1 { font-size: 2.1rem; }
   .section-title { font-size: 1.85rem; }
   .tl-item { grid-template-columns: 68px 1fr; }
-  section { padding: 3.75rem 0; }
+  .timeline + .show-more-btn { margin-left: calc(68px + 1.25rem); }
+  section { padding: 2.5rem 0; }
 }
 
 @media (max-width: 768px) {
   .tl-item { grid-template-columns: 72px 1fr; }
+  .timeline + .show-more-btn { margin-left: calc(72px + 1.25rem); }
   .hero-text h1 { font-size: 2.6rem; }
 }

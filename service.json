@@ -5,35 +5,40 @@
       "title": "Area Chair",
       "org": "WWW 2027 — The ACM Web Conference",
       "desc": "",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2027",
       "title": "Accessibility &amp; Inclusion Chair",
       "org": "IUI 2027 — ACM Intelligent User Interfaces",
       "desc": "",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2026",
       "title": "Workshop Co-organiser",
       "org": "UMAP4Good @ UMAP 2026<br>RecSoGood @ RecSys 2026",
       "desc": "",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2025",
       "title": "Proceedings Chair",
       "org": "IIR 2025 — 16th Italian Information Retrieval Workshop",
       "desc": "",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "date": "2025",
       "title": "Session Chair &amp; Workshop Co-organiser",
       "org": "IR4U2 2025 — Workshop on IR for Understudied Users @ SIGIR 2025",
       "desc": "",
-      "notes": ""
+      "notes": "",
+      "featured": false
     }
   ],
   "studentVolunteering": [
@@ -42,29 +47,34 @@
       "title": "Student Volunteer",
       "org": "ACM RecSys 2025<br>ACM UMAP 2024<br>ACM UMAP 2023",
       "desc": "",
-      "notes": ""
+      "notes": "",
+      "featured": false
     }
   ],
   "awardsGrants": [
     {
       "text": "<strong>\"Pietro Torasso\" Prize</strong> for the Best Master's Thesis in Artificial Intelligence —\n              <em>Ethics and Environmental Sustainability in Recommender Systems</em>.",
       "year": "2022 · University of Turin",
-      "notes": ""
+      "notes": "",
+      "featured": true
     },
     {
       "text": "<strong>3 Travel Grants</strong> awarded by competitive scientific committee selection:\n              ACM RecSys 2025, ACM UMAP 2024, ACM UMAP 2023.",
       "year": "2023–2025",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "text": "<strong>Google Cloud Research Grant</strong> for academic computing resources.",
       "year": "2024 · 2025 · 2026",
-      "notes": ""
+      "notes": "",
+      "featured": false
     },
     {
       "text": "<strong>Erasmus Traineeship Grant</strong> to support a visiting research period at University of Copenhagen, Denmark.",
       "year": "2025",
-      "notes": ""
+      "notes": "",
+      "featured": false
     }
   ]
 }
