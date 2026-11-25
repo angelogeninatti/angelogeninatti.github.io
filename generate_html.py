@@ -42,6 +42,8 @@ TYPE_ORDER = {"journal": 0, "conference": 1, "workshop": 2, "thesis": 3}
 # any other. The remaining items get the "is-extra" class (hidden by style.css
 # until script.js's "Show more" toggle expands the list); they stay in the
 # HTML so crawlers still see them.
+# Publications can also set "unpinned": true, which keeps them out of the
+# collapsed view altogether (it wins over "featured").
 # Keep PUB_COLLAPSE_LIMIT and the selection logic in sync with script.js.
 LIST_COLLAPSE_LIMIT = 3
 PUB_COLLAPSE_LIMIT = 5
@@ -125,10 +127,28 @@ def pub_card(pub, extra=False):
 def shown_pubs(pubs, fill_type="journal"):
     """Mirror of shownPubs() in script.js: featured publications of any type,
     topped up with the most recent ones of fill_type (any type if there are
-    none of it). Within a year the JSON order is kept."""
-    ordered = sorted(pubs, key=lambda p: p.get("year") or 0, reverse=True)
+    none of it). Unpinned publications are never shown while collapsed.
+    Within a year the JSON order is kept."""
+    candidates = [p for p in pubs if not p.get("unpinned")]
+    ordered = sorted(candidates, key=lambda p: p.get("year") or 0, reverse=True)
     fill = [p for p in ordered if p["type"] == fill_type] or ordered
     return pick_shown(ordered, PUB_COLLAPSE_LIMIT, fill)
+
+
+class ContentError(Exception):
+    pass
+
+
+def validate_publications(pubs):
+    """"featured" and "unpinned" contradict each other; refuse to build (and,
+    via the pre-commit hook, to commit) until the entry is fixed."""
+    clashes = [p for p in pubs if p.get("featured") and p.get("unpinned")]
+    if clashes:
+        lines = "\n".join(f"  - [{p.get('type')}, {p.get('year')}] {p.get('title')}" for p in clashes)
+        raise ContentError(
+            "publications.json: these entries have both \"featured\" and \"unpinned\" "
+            f"set to true; set one of them to false:\n{lines}"
+        )
 
 
 def render_publications(pubs):
@@ -221,6 +241,7 @@ def main():
     teaching = load("teaching.json")
     service = load("service.json")
     publications = load("publications.json")
+    validate_publications(publications)
 
     html_text = INDEX.read_text(encoding="utf-8")
 

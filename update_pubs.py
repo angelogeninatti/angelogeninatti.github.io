@@ -227,6 +227,7 @@ def main() -> None:
             "pdf":     None,
             "note":    "",
             "featured": False,
+            "unpinned": False,
         }
 
         existing.append(entry)

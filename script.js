@@ -98,11 +98,12 @@ const TYPE_ORDER = { journal: 0, conference: 1, workshop: 2, thesis: 3 };
    generate_html.py): those with "featured": true (most recent first, at most
    PUB_COLLAPSE_LIMIT), topped up to PUB_COLLAPSE_LIMIT with the most recent
    non-featured ones of the fill type (journals for "All", otherwise the
-   filtered type; any type if there are none of it). Same-year papers keep
-   their JSON order. */
+   filtered type; any type if there are none of it). Publications with
+   "unpinned": true are never shown while collapsed, even if featured.
+   Same-year papers keep their JSON order. */
 function shownPubs(filtered) {
   const fillType = activeFilter === "all" ? "journal" : activeFilter;
-  const ordered = [...filtered].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+  const ordered = filtered.filter(p => !p.unpinned).sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
   let fill = ordered.filter(p => p.type === fillType);
   if (fill.length === 0) fill = ordered;
   const featured = ordered.filter(p => p.featured).slice(0, PUB_COLLAPSE_LIMIT);
